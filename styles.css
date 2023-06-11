@@ -2,14 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Roboto&family=Roboto+Mono:ital,wght@1,700&display=swap');
 
 
-body{
-    box-sizing:border-box;
-    margin: 10;
-    padding:0;
-    background-color:#E7FFF5;
+html {
+    scroll-behavior: smooth
 }
 
-li,a{
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+}
+
+li, a {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 19px;
@@ -19,22 +26,25 @@ li,a{
 
 
 header {
+    background-color:#E7FFF5;
     display: flex;
+    justify-content: center;
     /*justify-content: space-between; /*  push left and right item to far edge, middle is spaced between*/
     align-items: center;
-    padding: 20px 10% 0px 10%;
+    padding: 2vh 10%;
 }
 
-.expand{
+.expand {
     width:35%;
 }
 
-.logo{
-    cursor: pointer;
+.logo {
+    height: 8vh;
+    width: auto;
 }
 
 
-.chrome{
+.chrome {
     display: flex;
     align-items: center;
     cursor:pointer;
@@ -42,37 +52,40 @@ header {
 }
 
 
-.nav_links{
+.nav_links {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     margin-top: 1px;
     padding: 0 5px;
-    width:29rem; /*ALIGNING THE CONTACT US*/
+    width:35rem; /*ALIGNING THE CONTACT US*/
 }
 
 
-.cta{
+.cta {
     /*background: transparent;*/
 }
 
-.nav_links li{
+.nav_links li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav_links li a{
+.nav_links li a {
     transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover{
+.nav_links li a:hover {
     color: #007368;
 }
 
-button{
-    display: inline-block;
+button {
+    display: flex;
     /* width: 20rem; */
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
     padding: 0px 30px; /*HERE BUTTON WIDTH AND HEIGHT*/
     color: rgb(42, 112, 102);
     color: white; 
@@ -109,7 +122,7 @@ button{
 
 
 
-#button1:hover > span{
+#button1:hover > span {
     color:rgba(60, 179, 113, 0.3);
 }
 
@@ -136,7 +149,7 @@ h1 {
     text-align: center;
     background-color: white;
     /* padding: 40px 20% 160px 20%; */
-    padding: 60px 0% 0 0%;
+    padding: 0;
     font-size: 35px;
     font-family: "Roboto Mono", sans-serif;
 }
@@ -152,53 +165,57 @@ h2 {
     font-family: "Montserrat", sans-serif;
 }
 
-.white {
+#white {
+    height: 90vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.green{
+#green table {
+    height: 100vh;
+    padding: 0 5%;
+    width: 100%;
     text-align: center;
     background-color: #E7FFF5;
     display: flex;
-    cursor: pointer;
     justify-content: space-evenly;
-    margin-left: 180px;
-    margin-right: 200px;
     align-items: center;
-    padding: 50px 0 50px 0; /*icon spacing above*/
+    padding: 50px 0; /*icon spacing above*/
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 22;
 }
 
+#white h1, h2 {
+    margin: 1vh;
+}
 
 
 .friendly {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
   
 .friendly img {
-    margin-right: -70px; /* moves the icon */
+    /* margin-right: -70px; moves the icon */
 }
 
 
 .friendly p2 {
-    margin-left: 80px; /* user friendly */
+    /* margin-left: 80px; user friendly */
   }
 
 .efficient img {
-    padding: 0px 0 0 0  /* person icon*/
+    /* padding: 0px 0 0 0  person icon */
 }
 
 
-
-p2{
-    padding: 25px 0 10px 0; /* text below icons*/
+p2 {
+    /* padding: 25px 0 10px 0; text below icons */
 }
-
-
 
 .image{
     display: flex;
@@ -213,7 +230,7 @@ p2{
     margin: 0 100px;
 } */
 
-p1{
+p1 {
     justify-content: space-between;
     font-family: "Montserrat", sans-serif;
     width: 80%;
@@ -226,6 +243,29 @@ p1{
     margin-right: 125px;
 }
 
+#green img {
+    width: 100px;
+    height: auto;
+}
+
+#green table {
+    display: grid;
+}
+
+#green table td {
+    padding: 1.5vh 5%;
+}
+
+#green table td p2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#green table td p3, p4, p5 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 
 .efficient, .friendly, .reliable {
@@ -235,9 +275,10 @@ p1{
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    width: 33%;
 }
 
-
+/* 
 p3{
     width: 90%;
     color: black; 
@@ -254,7 +295,6 @@ p4{
     padding: 25px 0 10px 0;
     display: flex;
     align-items: center;
-    margin-left: 85px;
 
 }
 
@@ -266,21 +306,20 @@ p5{
     padding: 25px 0 10px 0;
     display: flex;
     align-items: center;
-    margin-left: 200px;
 
-}
-
+} */
+/* 
 .reliable p5 {
-    margin-left: 110px; /* reliable paragraph text */
+    margin-left: 110px; reliable paragraph text
   }
 
 .reliable img {
-    margin-right: -100px; /* moves the icon */
+     margin-right: -100px; moves the icon 
 }
 
-.reliable p2{
-    margin-left: 100px;
-}
+.reliable p2 {
+    margin-left: 100px; 
+} */
 
 header1 {
 
@@ -321,11 +360,15 @@ li{
     padding: 10px;
     
   }
-  .row{
+  #row{
     background-color: white; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
   }
   /* Clear floats after the columns */
-  .row:after {
+  #row:after {
     content: "";
     display: table;
     clear: both;
@@ -335,7 +378,6 @@ li{
     padding: 90px 0 20 0;
     display: flex;
     align-items: center;
-    cursor:pointer;
     margin-top: 70px;
     margin-left:70px;
     width: 45%; 
@@ -348,7 +390,40 @@ img1 {
     /* border-radius: 100px; */
 }
 
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    vertical-align: auto;
+    height: 90vh;
+    width: 100%;
+    background-color: #E7FFF5;
+}
+
+#info .title {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    padding: 10vh 0;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#info div {
+    padding: 10vh 5%;
+    vertical-align: auto;
+}
+
+.instructions li {
+    padding: 2vh 0;
+}
+
+.whyus p {
+    text-indent: 50px;
+}
+
+
+
 footer{
+    height: 10vh;
     margin-top: -40px;
     margin-bottom: 120px;
     margin-right:50px;

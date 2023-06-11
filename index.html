@@ -5,28 +5,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="">
+<body>
     <header>
-        <img class="logo" src="biglogo.png" width="270px" height="90px" alt="logo">
+        <img class="logo" src="images/biglogo.png" width="270px" height="90px" alt="logo">
         <div class="expand"></div>
         <nav>
             <ul class="nav_links">
-                <li><a href="http://127.0.0.1:5500/instructions.html">Instructions</a></li>
-                <li><a href="http://127.0.0.1:5500/whyus.html">Why Us?</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#green">Phishy</a></li>
+                <li><a href="#row">About</a></li>
+                <li><a href="#info">Instructions</a></li>
+                <li style="width: 130px"><a href="#info">Why Us?</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
 
             </ul>
         </nav>
         <a class="cta" href="#">
             <button>
-                <span><img class="chrome" src="test.png" width="40px" height="40px" alt="logo"> 
-                    <p>DOWNLOAD PHISHY</span></p>
+                <span><img class="chrome" src="images/test.png" width="40px" height="40px" alt="logo"> 
+                    <p>DOWNLOAD PHISHY</p></span>
                 
             </button>
         </a>
-        <!--<img class="chrome" src="test.png" width="100px" height="150px" alt="logo">-->
+        <!--<img class="chrome" src="images/test.png" width="100px" height="150px" alt="logo">-->
     </header>
-    <div class="white" style="height: 45vh;"> 
+    <div id="white"> 
         <td style="white-space: nowrap">
         <h1 style="text-align: center;">Something Smells a &apos;lil Phishy</h1>
         <!-- <h2>Use Phishy and never worry about hackers in your email again. </h2> -->
@@ -35,24 +37,66 @@
         <h2><button id="button1">Get Phishy Now</button></h2>
     </div>
 
-    <div class="green">
+    <!-- <div class="green">
         <div class="efficient">
-            <img src="user.png" width="70px" height="86px">
+            <img src="images/user.png" width="70px" height="86px">
             <p2>Efficient</p2>
             <p3>Phishy's advanced data-mining techniques detect phishing cases beforehand, allowing for prompt identification in the main inbox, saving users from the need to wait upon opening emails.</p3>
         </div>
         <div class="friendly">
-            <img src="watch.png" width="70px" height="87px">
+            <img src="images/watch.png" width="70px" height="87px">
             <p2>User Friendly</p2>
             <p4>Phishy offers a user-friendly suite of programs for a seamless experience. The extension features simple toggles for activating key features and a customizable interface with light and dark modes. Explore the website for in-depth explanations about the AI and enhance your understanding of the extension's capabilities.</p4>
         </div>
         <div class="reliable">
-            <img src="verify.png" width="80px" height="85px">
+            <img src="images/verify.png" width="80px" height="85px">
             <p2>Reliable</p2>
             <p5>Phishy, achieves an impressive accuracy rate of 99.7%, surpassing the capabilities of other software. Its advanced algorithms and data-mining techniques ensure reliable and efficient phishing detection.</p5>
         </div>
-    </div>  
-    <div class="row">
+    </div>   -->
+
+    <div id="green">
+        <table>
+            <tr>
+                <td>
+                    <img src="images/user.png">
+                </td>
+                <td>
+                    <img src="images/watch.png">
+                </td>
+                <td>
+                    <img src="images/verify.png">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p2>Efficient</p2>
+                </td>
+                <td>
+                    <p2>User Friendly</p2>
+                </td>
+                <td>
+                    <p2>Reliable</p2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p3>Phishy's advanced data-mining techniques detect phishing cases beforehand, allowing for prompt identification in the main inbox, saving users from the need to wait upon opening emails.</p3>
+                </td>
+                <td>
+                    <p4>Phishy offers a user-friendly suite of programs for a seamless experience. The extension features simple toggles for activating key features and a customizable interface with light and dark modes. Explore the website for in-depth explanations about the AI and enhance your understanding of the extension's capabilities.</p4>
+                </td>
+                <td>
+                    <p5>Phishy, achieves an impressive accuracy rate of 99.7%, surpassing the capabilities of other software. Its advanced algorithms and data-mining techniques ensure reliable and efficient phishing detection.</p5>
+                </td>
+            </tr>
+        </table>  
+    </div>
+    
+
+
+
+    <div id="row">
         <div class="column" style="padding: 10px 10px 50px 210px;">
             <!-- 10px 10rem 10rem 3rem;-->
             <br><br>
@@ -77,15 +121,31 @@
             
             </div>
             <div class="column" style="background-color:white;">
-                <img class="demo" src="phishy.png" width="250rem" height="400rem">
+                <img class="demo" src="images/phishy.png" width="250rem" height="400rem">
               </div>
         </div>
 
+        <div id="info">
+            <div class="instructions">
+                <h3 class="title">Instructions</h3>
+                <ol>
+                    <li>Go to mail.google.com</li>
+                    <li>Click on the Settings Icon in the top right, then click “See all settings”</li>
+                    <li>Under “General”: select “Ask before displaying external images”</li>
+                    <li>Under “Labels”, go to “Spam”, and select “Show”</li>
+                </ol>
+            </div>
+            <div class="whyus">
+                <h3 class="title">Why Us?</h3>
+                <p class="p1">Our model is your superior choice when it comes to protecting yourself from phishing attacks. With our Chrome extension, the moment you enter your Gmail tab, we take immediate action. Our powerful algorithm and AI technology work tirelessly to scan all your incoming files, ensuring your safety from potential phishing threats. Unlike others, we don't wait for you to click on an email before alerting you. We proactively detect and flag suspicious emails in real-time, appearing in red to clearly indicate danger. By utilizing advanced AI capabilities, our model guarantees unrivaled accuracy in identifying phishing attempts, giving you the upper hand against cyber threats. Furthermore, we go beyond just protection- we empower you to learn how to recognize phishing attempts yourself, providing valuable knowledge and insights. Trust in our cutting-edge technology and prioritize your online security with our superior solution against phishing attacks</p>
+            </div>
+        </div>
+        
 
         <br><br><br><br>
         <div>
             <footer>
-                <img class="logo" src="biglogo.png" width="270px" height="90px" alt="logo">
+                <img class="logo" src="images/biglogo.png" width="270px" height="90px" alt="logo">
             </footer>
         </div>
         <hr class="line"> 

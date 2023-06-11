@@ -355,24 +355,53 @@ li{
   
   /* Create two equal columns that floats next to each other */
   .column {
-    float: left;
-    width: 50%;
     padding: 10px;
     
   }
   #row{
     background-color: white; 
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 5%;
   }
   /* Clear floats after the columns */
   #row:after {
     content: "";
-    display: table;
+    /* display: table; */
     clear: both;
   }
+
+  #row header1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+.column {
+    padding: 15px;
+}
+
+.column img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo {
+    display: flex;
+    justify-content: content;
+}
+
+.column :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* }
 
   .demo{
     padding: 90px 0 20 0;
@@ -381,8 +410,8 @@ li{
     margin-top: 70px;
     margin-left:70px;
     width: 45%; 
-    max-height: 220%; 
-  }
+    max-height: 220%;  */
+  /* } */
 
 img1 {
     width: 10rem; /* set width to 10 rem */

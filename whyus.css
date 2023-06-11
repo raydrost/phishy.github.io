@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    background-color: #E7FFF5;
+    /* padding: 40px 20% 160px 20%; */
+    padding: 60px 0% 0 0%;
+    font-size: 35px;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+.p1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #000000;
+    margin-left:100px;
+    margin-right:100px;
+    padding: 0 20px 0 20px;
+    overflow: hidden;
+
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+
+ol, li{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-left:150px;
+    margin-right:100px;
+}
